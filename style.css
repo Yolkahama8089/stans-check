@@ -42,6 +42,7 @@ body {
 }
 
 #names-cell {
+  position: relative;
   grid-row: 3 / 4;
   grid-column: 1 / 2;
   border-radius: 5px 5px 5px 20px;
@@ -125,7 +126,7 @@ body {
 .search-button:hover{
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.15);
 }
-
+/* all the tweets stuff formatting is here */
 #tweets-cell .tweet {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin: 12px;
@@ -151,4 +152,21 @@ body {
 	color: cadetblue;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	
+}
+
+/* all the names stuff formatting is right here */
+
+#names-cell .name-boxes {
+	position: absolute;
+	background-color: white;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 12px;
+	padding: 8px;
+	border: 2px solid grey;
+	border-radius: 8px;
+	width: 86%
+}
+
+#names-cell .name-boxes b{
+	background-color: white ;
 }
