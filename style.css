@@ -78,13 +78,15 @@ body {
 }
 
 #name-input{
-  width: 150px;
-  padding-left: 3px;
+  width: 190px;
+  padding-left: 8px;
+  padding-right: 8px;
   background-color: white;
-  color: black;
+  box-align: center;
+  /* color: black; */
+  border: 2px solid white;
   border-radius: 20px;
-  border-color: #222;
-  background-image: url('searchicon.png');
+  /* background-image: url('mag.png'); */
 }
 
 #keyword-input{
