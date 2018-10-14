@@ -79,38 +79,51 @@ body {
 }
 
 #name-input{
-  /* position: relative; */
   width: 88%;
   padding-left: 8px;
   padding-right: 8px;
   background-color: white;
   box-align: center;
-  /* color: black; */
   border: 2px solid white;
   border-radius: 20px;
-  background-image: url('mag.png');
+  /* background-image: url('mag.png');
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position-x: 98%;
-  background-position-y: center;
+  background-position-y: center; */
 }
 
 #keyword-input{
-  /* position: relative; */
-  width: 70%;
+  width: 75%;
   padding-left: 8px;
   padding-right: 8px;
   background-color: white;
   box-align: center;
-  /* color: black; */
   border: 2px solid white;
   border-radius: 20px;
-  background-image: url('mag.png');
+  /* background-image: url('mag.png');
   background-repeat: no-repeat;
   background-position: 2px 2px;
   background-size: 20px 20px;
   background-position-x: 98%;
+  background-position-y: center; */
+}
+
+#search-button{
+  border-radius: 20px;
+  width: 73px;
+  text-align: left;
+  border: 2px solid cadetblue;
+  background-color: cadetblue;
+  background-image: url('mag.png');
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position-x: 98%;
   background-position-y: center;
+}
+
+.search-button:hover{
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.15);
 }
 
 #tweets-cell .tweet {
