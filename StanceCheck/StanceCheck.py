@@ -6,8 +6,8 @@ if sys.version_info[0] < 3:
 else:
     import got3 as got
 
-with open('input.json', "r") as json_data:
-    data = json.load(json_data)
+name = sys.argv[1]
+topic = sys.argv[2]
 
 outputID = {}
 outputText = {}
@@ -15,7 +15,7 @@ outputPermalink = {}
 outputDate = {}
 outputUsername = {}
 
-tweetCriteria = got.manager.TweetCriteria().setUsername(data['name']).setQuerySearch(data['topic'])
+tweetCriteria = got.manager.TweetCriteria().setUsername(name).setQuerySearch(topic)
 size = len(got.manager.TweetManager.getTweets(tweetCriteria))
 
 for i in range(size):
