@@ -78,8 +78,25 @@ body {
 }
 
 #name-input{
-  position: relative;
+  /* position: relative; */
   width: 88%;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: white;
+  box-align: center;
+  /* color: black; */
+  border: 2px solid white;
+  border-radius: 20px;
+  background-image: url('mag.png');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position-x: 98%;
+  background-position-y: center;
+}
+
+#keyword-input{
+  /* position: relative; */
+  width: 70%;
   padding-left: 8px;
   padding-right: 8px;
   background-color: white;
@@ -93,11 +110,4 @@ body {
   background-size: 20px 20px;
   background-position-x: 98%;
   background-position-y: center;
-}
-
-#keyword-input{
-  width: 200px;
-  padding-left: 3px;
-  background-color: white;
-  color: black;
 }
