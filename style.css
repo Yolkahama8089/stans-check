@@ -58,11 +58,11 @@ body {
   grid-column: 1 / 2;
   align-items: center;
   vertical-align: bottom;
-  padding-top: 4px;
+  padding-top: 6px;
   padding-left: 10px;
   font-family: "Raleway", sans-serif;
   color: black;
-  font-weight: bold; 
+  font-weight: bolder; 
 }
 
 #keyword-input-container {
@@ -70,15 +70,16 @@ body {
   grid-column: 2 / 3;
   align-items: center;
   vertical-align: bottom;
-  padding-top: 4px;
+  padding-top: 6px;
   padding-left: 10px;
   font-family: "Raleway", sans-serif;
   color: black;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 #name-input{
-  width: 190px;
+  position: relative;
+  width: 88%;
   padding-left: 8px;
   padding-right: 8px;
   background-color: white;
@@ -86,7 +87,12 @@ body {
   /* color: black; */
   border: 2px solid white;
   border-radius: 20px;
-  /* background-image: url('mag.png'); */
+  background-image: url('mag.png');
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  background-size: 20px 20px;
+  background-position-x: 98%;
+  background-position-y: center;
 }
 
 #keyword-input{

@@ -10,8 +10,8 @@
     <script src="script.js"></script>
     
 	<!-- Bootstrap CDN is here -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
 
 	<title>Stans Check</title>
 </head>
@@ -22,7 +22,7 @@
         <!-- Banner -->
         <div id="banner-cell">
             <p id="banner-text">
-                <img src="stans-check.png" alt="logo" id="logo">
+                <img src="stans-check.png" alt="logo" id="logo" >
                 Stan's Check
             </p>
         </div>
@@ -30,12 +30,16 @@
         <!-- input container -->
       
         <div id="name-input-container">
-            Name:   <input type="text" id="name-input">
+            <form>
+                <input type="text" id="name-input" placeholder = "Name...">
+            </form>
 		</div>  
 		
 		<div id="keyword-input-container"> 
-			Keyword: <input type="text" id="keyword-input">
-            <button id="search-button" onclick="onSearch()">Search</button>
+            <form>
+			    Keyword: <input type="text" id="keyword-input">
+                <button id="search-button" onclick="onSearch()">Search</button>
+            </form>
         </div>
         
 
