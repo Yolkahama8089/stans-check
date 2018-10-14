@@ -86,11 +86,10 @@ body {
   box-align: center;
   border: 2px solid white;
   border-radius: 20px;
-  /* background-image: url('mag.png');
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position-x: 98%;
-  background-position-y: center; */
+}
+
+#name-input:focus{
+  border: 2px solid cadetblue;
 }
 
 #keyword-input{
@@ -101,12 +100,10 @@ body {
   box-align: center;
   border: 2px solid white;
   border-radius: 20px;
-  /* background-image: url('mag.png');
-  background-repeat: no-repeat;
-  background-position: 2px 2px;
-  background-size: 20px 20px;
-  background-position-x: 98%;
-  background-position-y: center; */
+}
+
+#keyword-input:focus{
+  border: 2px solid cadetblue;
 }
 
 #search-button{
@@ -114,16 +111,17 @@ body {
   width: 73px;
   text-align: left;
   border: 2px solid cadetblue;
-  background-color: cadetblue;
+  background-color: white;
   background-image: url('mag.png');
   background-repeat: no-repeat;
-  background-size: 18px 18px;
-  background-position-x: 98%;
+  background-size: 15px 15px;
+  background-position-x: 97%;
   background-position-y: center;
+  transition-duration: 0.5s;
 }
 
-.search-button:hover{
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.15);
+#search-button:hover{
+  background-color: cadetblue;
 }
 
 #tweets-cell .tweet {
