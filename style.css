@@ -72,6 +72,9 @@ body {
   vertical-align: bottom;
   padding-top: 4px;
   padding-left: 10px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: bold;
 }
 
 #name-input{
@@ -79,10 +82,13 @@ body {
   padding-left: 3px;
   background-color: white;
   color: black;
+  border-radius: 20px;
+  border-color: #222;
+  background-image: url('searchicon.png');
 }
 
 #keyword-input{
-  width: 500px;
+  width: 200px;
   padding-left: 3px;
   background-color: white;
   color: black;
