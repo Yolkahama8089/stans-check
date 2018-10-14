@@ -6,52 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    
-	<!-- Bootstrap CDN is here -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/uncompressed-jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap CDN is here -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
 
-	<title>Stans Check</title>
+    <title>Stans Check</title>
 </head>
 
-<body onload="onLoad()">
+<body>
     <!-- Grid Container Div -->
     <div id="wrapper">
         <!-- Banner -->
         <div id="banner-cell">
             <p id="banner-text">
-                <img src="stans-check.png" alt="logo" id="logo" >
+                <img src="img/stans-check.png" alt="logo" id="logo">
                 Stan's Check -H
             </p>
         </div>
 
-        <!-- input container --> 
-		
-		<div id="keyword-input-container"> 
-            <form>
-			    <input type="text" id="keyword-input" placeholder = "Keyword...">
-                <button id="search-button" onclick="onSearch()">Search</button>
-            </form>
+        <!-- input container -->
+
+        <div id="topic-input-container">
+            <input type="text" id="topic-input" placeholder="Keyword...">
+            <button id="search-button" onclick="onSearch()">Search</button>
         </div>
-        
+
 
         <!-- twitter names container -->
         <div id="names-cell">
-			<button class = "name-boxes"><b>Donald J. Trump</b>  @realDonaldTrump</button>
+            <button class="name-boxes" onclick="switchName(this)"><b>Donald J. Trump</b> @realDonaldTrump</button>
+            <button class="name-boxes" onclick="switchName(this)"><b>Hillary Clinton</b> @HillaryClinton</button>
+
         </div>
 
         <!-- tweets container -->
         <div id="tweets-cell">
-        	<div class = "tweet">
-				<b>@realDonaldTrump</b>
-				<br>
-				I love Kanye, he is awesome
-				<br>
-				<sub>I also love boys</sub>
-			</div>
-		</div>
+            <div class="tweet">
+                <b>@realDonaldTrump</b>
+                <br>
+                I love Kanye, he is awesome
+                <br>
+                <sub>I also love boys</sub>
+            </div>
+        </div>
 
     </div>
 </body>
